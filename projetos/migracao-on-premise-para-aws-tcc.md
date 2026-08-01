@@ -2,12 +2,15 @@
 
 Projeto de TCC voltado para a migração de uma infraestrutura on-premise para a AWS, com foco em WordPress, MySQL e monitoramento.
 
-## Serviços e ferramentas
-- WordPress
-- MySQL
-- Amazon CloudWatch
-- AWS Trusted Advisor
-- Iptables
+## Serviços e Ferramentas
+
+| Serviço | Função |
+|---|---|
+| WordPress | Aplicação web hospedada na instância EC2 |
+| MySQL | Banco de dados relacional da aplicação |
+| Amazon CloudWatch | Monitoramento de métricas e logs da infraestrutura |
+| AWS Trusted Advisor | Recomendações de segurança, custo e performance |
+| Iptables | Firewall configurado na camada do sistema operacional Linux |
 
 ## Status
 ✅ Concluído
