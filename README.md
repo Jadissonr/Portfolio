@@ -1,6 +1,15 @@
 # Portfolio
 Config files for my GitHub profile.
 
+## Estrutura do repositório
+
+- [projetos](projetos/)
+- [projetos-aws](projetos-aws/)
+- [linux-notes](linux-notes/)
+- [ctf-writeups](ctf-writeups/)
+- [certificacoes](certificacoes/)
+- [homelab](homelab/)
+
 | # | Projeto | Serviços/Ferramentas | Status | Origem |
 |---|---|---|---|---|
 | 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | WordPress, MySQL, Amazon CloudWatch, AWS Trusted Advisor, Iptables (firewall Linux) | ✅ Concluído | SENAI São Caetano do Sul |
