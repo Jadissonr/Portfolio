@@ -7,4 +7,5 @@ Esta pasta organiza notas de metodologias e técnicas aprendidas em CTFs e labs 
 | # | Desafio/Conceito | Ferramentas/Técnicas | Plataforma |
 |---|---|---|---|
 | 01 | [TryHackMe - Disgruntled](tryhackme/disgruntled/README.md) | journalctl, .bash_history, stat, cat, crontab.guru | TryHackMe |
-| 02 | Em breve | — | — |
+| 02 | [TryHackMe - Ninja Skills](tryhackme/ninja-skills/README.md) | enumeração, linha de comando, análise de sistema, técnicas básicas de pentest | TryHackMe |
+| 03 | Em breve | — | — |
