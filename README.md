@@ -1,5 +1,21 @@
-# Portfolio
-Config files for my GitHub profile.
+# Olá, eu sou o Jadisson 👋
+
+Estudante de cybersecurity e cloud, em transição de carreira para a área de segurança da informação — com foco em me especializar em **Red Team para AWS**.
+
+Formado em Redes de Computadores pelo SENAI, com TCC prático de migração on-premise para nuvem AWS (WordPress + MySQL, segurança com Iptables, CloudWatch e Trusted Advisor). Hoje sigo um roadmap estruturado de estudos: Linux, redes, AWS (AI Practitioner e Cloud Practitioner em andamento) e trilha ofensiva (CompTIA Security+, PenTest+, prática constante no TryHackMe).
+
+Este repositório é onde documento essa jornada: labs, CTFs, certificações e projetos práticos.
+
+📫 [LinkedIn](https://linkedin.com/in/jadisson-rayan-661900103) · contato.swfps@gmail.com
+
+## Estrutura do repositório
+
+- [projetos](projetos/)
+- [projetos-aws](projetos-aws/)
+- [linux-notes](linux-notes/)
+- [ctf-writeups](ctf-writeups/)
+- [certificacoes](certificacoes/)
+- [homelab](homelab/)
 
 ## Estrutura do repositório
 
