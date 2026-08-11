@@ -35,7 +35,7 @@ Bem-vindo ao meu repositório no GitHub. Aqui registro minha jornada de estudos 
 | 04 | [Linux - Boot, Hardware e Kernel](projetos/linux-boot-hardware-e-kernel.md) | dmesg, lsblk, lspci, lscpu, systemd | ✅ Concluído | Iniciativa própria |
 | 05 | [Linux - Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | ip, ss, curl, DNS, NAT, port forwarding | ✅ Concluído | Iniciativa própria |
 | 06 | [TryHackMe - Cyber Security 101](projetos/tryhackme-cyber-security-101.md) | OSINT, Google Dorking, Gobuster | 🔄 Em andamento | TryHackMe |
-| 07 | Jr Penetration Tester (Jr Pentester) | Metodologia de pentest e reconhecimento | ⏳ Planejado | TryHackMe |
+| 07 | [Jr SOC Analyst (TryHackMe)](projetos/jr-soc-analyst-tryhackme.md) | Monitoramento, análise de logs, incident response e SOC basics | ⏳ Planejado | TryHackMe |
 
 ## Roadmap atual
 
