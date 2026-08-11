@@ -6,7 +6,7 @@ Esta pasta reúne materiais de estudo, anotações e acompanhamento do progresso
 
 | # | Certificação | Área | Status |
 |---|---|---|---|
-| 01 | AWS Certified AI Practitioner (AIF-C01) | Inteligência Artificial e AWS | 🔄 Em andamento |
+| 01 | AWS Certified AI Practitioner (AIF-C01) | Inteligência Artificial e AWS | ✅ Concluída |
 | 02 | AWS Certified Cloud Practitioner (CLF-C02) | Fundamentos de nuvem AWS | ⏳ Pendente |
 | 03 | AWS Certified Solutions Architect – Associate (SAA-C03) | Arquitetura de soluções em AWS | ⏳ Pendente |
 | 04 | CompTIA Security+ | Segurança da informação e operações de segurança | ⏳ Pendente |
