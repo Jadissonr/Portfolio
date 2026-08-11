@@ -6,7 +6,7 @@ Bem-vindo ao meu repositório no GitHub. Aqui registro minha jornada de estudos 
 
 - Estudante de cybersecurity e cloud, em transição de carreira para a área de segurança da informação.
 - Formação em Redes de Computadores pelo SENAI.
-- Foco atual: Linux, redes, AWS, e trilha ofensiva com interesse em Red Team e pentest.
+- Foco atual: Linux, redes, AWS, e trilha defensiva com interesse em Blue Team.
 
 ## O que você encontrará aqui
 
