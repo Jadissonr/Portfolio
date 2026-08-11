@@ -1,12 +1,16 @@
 # 📜 Certificações
 
-Esta pasta organiza materiais de estudo e resumos para certificações em andamento e futuras.
+Esta pasta reúne materiais de estudo, anotações e acompanhamento do progresso em certificações relevantes para a minha trajetória em cybersecurity e cloud.
 
-## Conteúdo
+## Certificações em andamento e planejadas
 
-| # | Item | Descrição | Status |
+| # | Certificação | Área | Status |
 |---|---|---|---|
-| 01 | AWS Certified AI Practitioner (AIF-C01) | Fundamentos de IA/ML, IA Generativa, Amazon Bedrock, Amazon SageMaker | 🔄 Em andamento |
-| 02 | AWS Certified Cloud Practitioner (CLF-C02) | Fundamentos de computação em nuvem AWS, modelo de responsabilidade compartilhada, serviços core | ⏳ Pendente |
-| 03 | AWS Certified Solutions Architect – Associate (SAA-C03) | Arquitetura de soluções em nuvem AWS, VPC, EC2, alta disponibilidade | ⏳ Pendente |
-| 04 | CompTIA PenTest+ | Metodologia de testes de penetração, segurança ofensiva | ⏳ Pendente |
+| 01 | AWS Certified AI Practitioner (AIF-C01) | Inteligência Artificial e AWS | 🔄 Em andamento |
+| 02 | AWS Certified Cloud Practitioner (CLF-C02) | Fundamentos de nuvem AWS | ⏳ Pendente |
+| 03 | AWS Certified Solutions Architect – Associate (SAA-C03) | Arquitetura de soluções em AWS | ⏳ Pendente |
+| 04 | CompTIA Security+ | Segurança da informação e operações de segurança | ⏳ Pendente |
+
+## Objetivo
+
+Organizar os estudos de forma clara, com foco em evolução técnica e preparação para certificações que complementam a minha formação prática e acadêmica.
