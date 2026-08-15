@@ -1,51 +1,66 @@
-# Portfólio de Estudos | Jadisson 👋
+# 🤖 TryHackMe Progress Tracker
 
-Bem-vindo ao meu repositório no GitHub. Aqui registro minha jornada de estudos em cybersecurity, cloud computing e segurança da informação, com foco em construir uma base sólida para trabalhar com segurança ofensiva e AWS.
+Automação que busca as salas concluídas no TryHackMe e atualiza sozinha o arquivo
+`ctf-writeups/tryhackme/progresso-geral.md` do portfólio, toda semana, via GitHub Actions.
 
-## Sobre mim
+> ⚠️ Usa uma API não-oficial da TryHackMe (engenharia reversa feita pela comunidade,
+> não documentada nem suportada oficialmente). Pode parar de funcionar sem aviso se
+> a TryHackMe mudar algo internamente — nesse caso, é só ajustar o script.
 
-- Estudante de cybersecurity e cloud, em transição de carreira para a área de segurança da informação.
-- Formação em Redes de Computadores pelo SENAI.
-- Foco atual: Linux, redes, AWS, e trilha defensiva com interesse em Blue Team.
+## Como funciona
 
-## O que você encontrará aqui
+```
+GitHub Actions (agendado toda segunda) 
+        → roda fetch_progress.py 
+        → busca salas concluídas na API pública do seu perfil THM 
+        → gera a tabela em progresso-geral.md 
+        → commita e faz push automaticamente, só se algo mudou
+```
 
-- Projetos práticos e documentos técnicos
-- Writeups de CTFs e laboratórios
-- Notas de estudo e comandos do Linux
-- Registro de certificações e metas de aprendizado
-- Experimentos e referências do homelab
+## Passo 1 — Deixe seu perfil TryHackMe público
 
-## Estrutura do repositório
+Vá em **Configurações → Privacidade** no TryHackMe e marque o perfil como público.
+Isso evita precisar guardar cookie de sessão (mais simples e mais seguro).
 
-- [projetos](projetos/)
-- [projetos-aws](projetos-aws/)
-- [linux-notes](linux-notes/)
-- [ctf-writeups](ctf-writeups/)
-- [certificacoes](certificacoes/)
-- [homelab](homelab/)
+## Passo 2 — Encontre seu THM_USER_HASH
 
-## Projetos principais
+1. Abra `https://tryhackme.com/p/SEU_USUARIO` no navegador
+2. Abra o **DevTools** (`F12`) → aba **Network**
+3. Recarregue a página (`F5`)
+4. Procure uma requisição pra `completed-rooms` na lista de requisições
+5. Copie o valor do parâmetro `?user=XXXXXXXX` da URL — esse é seu hash
 
-| # | Projeto | Ferramentas / Serviços | Status | Origem |
-|---|---|---|---|---|
-| 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | WordPress, MySQL, CloudWatch, Trusted Advisor, Iptables | ✅ Concluído | SENAI São Caetano do Sul |
-| 02 | [Fundamentos de Redes e Firewall](projetos/fundamentos-de-redes-e-firewall.md) | Redes, roteadores, switches, firewalls | ✅ Concluído | SENAI São Caetano do Sul |
-| 03 | [Linux Fundamentals - Terminal e Processos](projetos/linux-fundamentals-terminal-e-processos.md) | Bash, ps, kill, systemctl, journalctl | ✅ Concluído | Iniciativa própria |
-| 04 | [Linux - Boot, Hardware e Kernel](projetos/linux-boot-hardware-e-kernel.md) | dmesg, lsblk, lspci, lscpu, systemd | ✅ Concluído | Iniciativa própria |
-| 05 | [Linux - Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | ip, ss, curl, DNS, NAT, port forwarding | ✅ Concluído | Iniciativa própria |
-| 06 | [TryHackMe - Cyber Security 101](projetos/tryhackme-cyber-security-101.md) | OSINT, Google Dorking, Gobuster | 🔄 Em andamento | TryHackMe |
-| 07 | [Jr SOC Analyst (TryHackMe)](projetos/jr-soc-analyst-tryhackme.md) | Monitoramento, análise de logs, incident response e SOC basics | ⏳ Planejado | TryHackMe |
+## Passo 3 — Configure o Secret no GitHub
 
-## Roadmap atual
+No seu repositório do portfólio:
 
-- Linux e administração de sistemas
-- Redes e troubleshooting
-- AWS Cloud Practitioner e AI Practitioner
-- Fundamentos de segurança ofensiva e pentest
-- Prática contínua em laboratórios e CTFs
+1. Vá em **Settings → Secrets and variables → Actions**
+2. Clique em **New repository secret**
+3. Nome: `THM_USER_HASH`
+4. Valor: o hash que você copiou no Passo 2
+5. (Só se seu perfil for **privado**) Adicione também um secret `THM_COOKIE` com
+   o valor do cookie `connect.sid` da sua sessão logada — **nunca** coloque isso
+   direto no código
 
-## Contato
+## Passo 4 — Copie os arquivos pro seu repositório
 
-- LinkedIn: [jadisson-rayan-661900103](https://linkedin.com/in/jadisson-rayan-661900103)
-- E-mail: contato.swfps@gmail.com
+```
+seu-portfolio/
+├── fetch_progress.py
+└── .github/
+    └── workflows/
+        └── update-progress.yml
+```
+
+## Passo 5 — Teste manualmente
+
+Na aba **Actions** do seu repositório no GitHub, selecione o workflow
+"Atualizar progresso do TryHackMe" e clique em **Run workflow** pra testar
+sem esperar a segunda-feira.
+
+## Manutenção
+
+Como a API não é oficial, se o script parar de funcionar (erro HTTP ou lista vazia):
+1. Repita o Passo 2 pra confirmar se o endpoint/estrutura mudou
+2. Abra o DevTools de novo e compare o JSON retornado com os nomes de campo
+   usados na função `normalizar_sala()` do script — ajuste se necessário

@@ -1,0 +1,37 @@
+name: Atualizar progresso do TryHackMe
+
+on:
+  schedule:
+    # Toda segunda-feira as 09:00 UTC (06:00 horario de Brasilia)
+    - cron: "0 9 * * 1"
+  workflow_dispatch: {}  # permite rodar manualmente pela aba Actions do GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Buscar progresso e atualizar arquivo
+        env:
+          THM_USER_HASH: ${{ secrets.THM_USER_HASH }}
+          THM_COOKIE: ${{ secrets.THM_COOKIE }}  # opcional, deixe vazio se o perfil for publico
+        run: python fetch_progress.py
+
+      - name: Commitar alteracoes (se houver)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ctf-writeups/tryhackme/progresso-geral.md
+          git diff --cached --quiet && echo "Nada novo para commitar." && exit 0
+          git commit -m "docs: atualiza progresso do TryHackMe [automatico]"
+          git push
