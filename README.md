@@ -1,20 +1,25 @@
-# Portfólio de Estudos | Jadisson 👋
+# Portfólio Profissional — Jadisson
 
-Bem-vindo ao meu repositório no GitHub. Aqui registro minha jornada de estudos em cybersecurity, cloud computing e segurança da informação, com foco em construir uma base sólida para trabalhar com segurança defensiva e AWS.
+Bem-vindo ao meu repositório de portfólio profissional. Aqui documento minha trajetória em **Segurança da Informação** e **Cloud Computing**, com foco em defesa de infraestruturas, análise de segurança e soluções em nuvem. Este repositório reflete meu compromisso com aprendizado contínuo e excelência técnica.
 
 ## Sobre mim
 
-- Estudante de cybersecurity e cloud, em transição de carreira para a área de segurança da informação.
-- Formação em Redes de Computadores pelo SENAI.
-- Foco atual: Linux, redes, AWS, e trilha defensiva com interesse em Blue Team.
+**Especialista em Segurança da Informação | Analyst Defensivo | Cloud Practitioner**
 
-## O que você encontrará aqui
+- 🎓 Graduação em andamento: **Segurança da Informação** — Universidade São Judas Tadeu (USJT)
+- 🎓 Técnico em Redes de Computadores — SENAI São Caetano do Sul
+- 🔍 Foco: Segurança defensiva (Blue Team), análise de vulnerabilidades, hardening de sistemas Linux e AWS
+- ☁️ Expertise em: Linux administration, cloud security, redes, infraestruturas defensivas
 
-- Projetos práticos e documentos técnicos
-- Writeups de CTFs e laboratórios
-- Notas de estudo e comandos do Linux
-- Registro de certificações e metas de aprendizado
-- Experimentos e referências do homelab
+## Conteúdo do Portfólio
+
+Este repositório contém:
+
+- **Projetos Práticos** — Implementações técnicas e documentações de estudos de caso
+- **CTF Writeups** — Análise e resolução de desafios de captura de bandeira (TryHackMe, etc.)
+- **Documentação Técnica** — Notas sobre Linux, redes, seguridade, AWS e arquiteturas defensivas
+- **Certificações e Metas** — Trilha de certificações e competências profissionais
+- **Laboratórios** — Experimentos de hardening, configuração de segurança e testes de penetração
 
 ## Estrutura do repositório
 
@@ -25,21 +30,58 @@ Bem-vindo ao meu repositório no GitHub. Aqui registro minha jornada de estudos 
 - [certificacoes](certificacoes/README.md)
 - [homelab](homelab/README.md)
 
-## Conteúdos recentes no GitHub
+## Destaques Técnicos
 
-- [CTF Writeups](ctf-writeups/README.md) — registros de estudos, técnicas e desafios em labs e plataformas como TryHackMe.
-- [Linux Notes](linux-notes/README.md) — comandos, dicas e anotações práticas do ambiente Linux.
-- [Projetos AWS](projetos-aws/README.md) — estudos, arquiteturas e exercícios focados em serviços e boas práticas AWS.
-- [Certificações](certificacoes/README.md) — acompanhamento de certificações, metas e evolução acadêmica/profissional.
+- **[CTF Writeups](ctf-writeups/README.md)** — Resolução e análise técnica de desafios de segurança ofensiva e defensiva
+- **[Documentação Linux](linux-notes/README.md)** — Administração de sistemas, hardening, troubleshooting de redes e segurança
+- **[Projetos AWS](projetos-aws/README.md)** — Arquiteturas seguras, compliance, identidade e segurança em nuvem
+- **[Certificações e Desenvolvimento](certificacoes/README.md)** — Trilha técnica e certificações profissionais
 
-## Projetos principais
+## Projetos Realizados
 
-| # | Projeto | Ferramentas / Serviços | Status | Origem |
-|---|---|---|---|---|
-| 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | WordPress, MySQL, CloudWatch, Trusted Advisor, Iptables | ✅ Concluído | SENAI São Caetano do Sul |
-| 02 | [Fundamentos de Redes e Firewall](projetos/fundamentos-de-redes-e-firewall.md) | Redes, roteadores, switches, firewalls | ✅ Concluído | SENAI São Caetano do Sul |
-| 03 | [Linux Fundamentals - Terminal e Processos](projetos/linux-fundamentals-terminal-e-processos.md) | Bash, ps, kill, systemctl, journalctl | ✅ Concluído | Iniciativa própria |
-| 04 | [Linux - Boot, Hardware e Kernel](projetos/linux-boot-hardware-e-kernel.md) | dmesg, lsblk, lspci, lscpu, systemd | ✅ Concluído | Iniciativa própria |
-| 05 | [Linux - Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | ip, ss, curl, DNS, NAT, port forwarding | ✅ Concluído | Iniciativa própria |
-| 06 | [TryHackMe Progress Tracker](projetos/thm-progress-tracker/README.md) | Python, GitHub Actions, API TryHackMe | 🔄 Em andamento | Iniciativa própria |
+| # | Projeto | Descrição | Status |
+|---|---|---|---|
+| 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | Migração de infraestrutura com WordPress/MySQL; implementação de monitoramento com CloudWatch e otimização com Trusted Advisor | ✅ Concluído |
+| 02 | [Fundamentos de Redes e Firewall](projetos/fundamentos-de-redes-e-firewall.md) | Design e implementação de arquitetura de rede segura com firewalls, roteadores e switches | ✅ Concluído |
+| 03 | [Linux Administration — Terminal & Processos](projetos/linux-fundamentals-terminal-e-processos.md) | Gerenciamento avançado de processos, scripts bash e automação de tarefas | ✅ Concluído |
+| 04 | [Linux — Boot, Hardware & Kernel](projetos/linux-boot-hardware-e-kernel.md) | Análise de boot, configuração de hardware, tunning de kernel | ✅ Concluído |
+| 05 | [Linux — Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | Diagnóstico de problemas de rede, DNS, NAT e port forwarding | ✅ Concluído |
+| 06 | [TryHackMe Progress Tracker](projetos/thm-progress-tracker/README.md) | Automação em Python com integração GitHub Actions e API TryHackMe | 🔄 Em andamento |
+
+---
+
+## Competências Técnicas
+
+**Segurança da Informação**
+- Análise de vulnerabilidades e testes de penetração
+- Hardening de sistemas Linux
+- Segurança de redes e firewalls
+- SIEM e monitoramento de segurança
+
+**Linux & Administração**
+- Administração de sistemas Linux/Unix
+- Scripting Bash e automação
+- Gerenciamento de processos e recursos
+- Troubleshooting de redes e conectividade
+
+**Cloud Computing**
+- AWS fundamentals e serviços de segurança
+- Arquiteturas defensivas em nuvem
+- IAM e compliance
+
+**Ferramentas & Plataformas**
+- TryHackMe, CTF challenges
+- Kali Linux, Nmap, Wireshark
+- Git e GitHub
+- Bash, Python
+
+---
+
+## Objetivo Profissional
+
+Atuar como **Especialista em Segurança Defensiva (Blue Team)**, contribuindo para a proteção de infraestruturas críticas através de análise de segurança, detecção de ameaças e implementação de controles efetivos.
+
+---
+
+**📫 Contato:** Disponível para discussões sobre segurança, projetos colaborativos e oportunidades profissionais.
 
