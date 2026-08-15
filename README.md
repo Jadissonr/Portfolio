@@ -83,5 +83,8 @@ Atuar como **Especialista em Segurança Defensiva (Blue Team)**, contribuindo pa
 
 ---
 
-**📫 Contato:** Disponível para discussões sobre segurança, projetos colaborativos e oportunidades profissionais.
+## Contato
+
+**📧 Email:** [contato.swfps@gmail.com](mailto:contato.swfps@gmail.com)  
+**💼 Disponível para:** Discussões sobre segurança, projetos colaborativos e oportunidades profissionais.
 
