@@ -25,7 +25,7 @@ from datetime import datetime
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
-THM_USERNAME = os.environ.get("THM_USER_HASH", "")  # nome da env var mantido por compatibilidade
+THM_USERNAME = os.environ.get("THM_USERNAME") or os.environ.get("THM_USER_HASH", "")
 
 API_URL = "https://tryhackme.com/api/v2/public-profile/completed-rooms"
 OUTPUT_FILE = "ctf-writeups/tryhackme/progresso-geral.md"
@@ -40,7 +40,7 @@ SALAS_COM_WRITEUP = {
 def buscar_salas_completas():
     """Busca todas as paginas de salas concluidas via API publica."""
     if not THM_USERNAME:
-        print("ERRO: variavel de ambiente THM_USER_HASH nao definida (deve conter seu username).")
+        print("ERRO: variavel de ambiente THM_USERNAME nao definida (deve conter seu username do TryHackMe).")
         sys.exit(1)
 
     todas_salas = []
