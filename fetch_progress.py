@@ -11,15 +11,10 @@ IMPORTANTE - leia antes de usar:
 - O endpoint usado e de "perfil publico". Seu perfil TryHackMe precisa estar
   configurado como publico (Configuracoes > Privacidade) para funcionar
   sem autenticacao.
-- Nunca commite seu THM_USER_HASH nem cookies em texto puro no repositorio.
-  Use sempre variaveis de ambiente / GitHub Secrets.
 
-Como achar seu THM_USER_HASH:
-1. Abra https://tryhackme.com/p/SEU_USUARIO no navegador
-2. Abra o DevTools (F12) -> aba "Network"
-3. Recarregue a pagina (F5)
-4. Procure por uma requisicao para "completed-rooms" na lista
-5. O valor do parametro ?user=XXXXXXXX na URL e o seu hash
+Como achar seu nome de usuario:
+- E o mesmo username que voce usa para logar no TryHackMe (aparece na URL
+  do seu perfil: https://tryhackme.com/p/SEU_USUARIO)
 """
 
 import os
@@ -30,8 +25,7 @@ from datetime import datetime
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
-THM_USER_HASH = os.environ.get("THM_USER_HASH", "")
-THM_COOKIE = os.environ.get("THM_COOKIE", "")  # opcional, so se o perfil for privado
+THM_USERNAME = os.environ.get("THM_USER_HASH", "")  # nome da env var mantido por compatibilidade
 
 API_URL = "https://tryhackme.com/api/v2/public-profile/completed-rooms"
 OUTPUT_FILE = "ctf-writeups/tryhackme/progresso-geral.md"
@@ -45,8 +39,8 @@ SALAS_COM_WRITEUP = {
 
 def buscar_salas_completas():
     """Busca todas as paginas de salas concluidas via API publica."""
-    if not THM_USER_HASH:
-        print("ERRO: variavel de ambiente THM_USER_HASH nao definida.")
+    if not THM_USERNAME:
+        print("ERRO: variavel de ambiente THM_USER_HASH nao definida (deve conter seu username).")
         sys.exit(1)
 
     todas_salas = []
@@ -54,13 +48,11 @@ def buscar_salas_completas():
     limite = 50
 
     while True:
-        url = f"{API_URL}?user={THM_USER_HASH}&limit={limite}&page={pagina}"
+        url = f"{API_URL}?username={THM_USERNAME}&limit={limite}&page={pagina}"
         headers = {
             "User-Agent": "Mozilla/5.0 (portfolio-tracker-script)",
             "Accept": "application/json",
         }
-        if THM_COOKIE:
-            headers["Cookie"] = f"connect.sid={THM_COOKIE}"
 
         req = Request(url, headers=headers)
         try:
@@ -68,7 +60,7 @@ def buscar_salas_completas():
                 dados = json.loads(resp.read().decode("utf-8"))
         except HTTPError as e:
             print(f"ERRO HTTP {e.code} ao consultar a API. "
-                  f"Verifique se o THM_USER_HASH esta certo e se o perfil e publico.")
+                  f"Verifique se o username esta certo e se o perfil e publico.")
             sys.exit(1)
         except URLError as e:
             print(f"ERRO de rede: {e}")
