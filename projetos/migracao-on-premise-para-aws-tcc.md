@@ -1,15 +1,19 @@
 # Migração On-Premise para AWS (TCC)
 
-Projeto de TCC voltado para a migração de uma infraestrutura on-premise para a AWS, com foco em WordPress, MySQL e monitoramento.
+Projeto de TCC voltado para a migração de uma infraestrutura on-premise para a AWS, com foco em WordPress, MySQL, monitoramento e segurança de infraestrutura.
 
-## Serviços e Ferramentas
+## Objetivo
 
-| Serviço | Função |
+Avaliar e implementar uma migração de ambiente web para a nuvem, preservando disponibilidade, controle de acesso e observabilidade da aplicação.
+
+## Serviços e ferramentas
+
+| Serviço / Ferramenta | Função |
 |---|---|
-| WordPress | Aplicação web hospedada na instância EC2 |
+| WordPress | Aplicação web hospedada em instância EC2 |
 | MySQL | Banco de dados relacional da aplicação |
 | Amazon CloudWatch | Monitoramento de métricas e logs da infraestrutura |
-| AWS Trusted Advisor | Recomendações de segurança, custo e performance |
+| AWS Trusted Advisor | Recomendações de custo, segurança e performance |
 | Iptables | Firewall configurado na camada do sistema operacional Linux |
 
 ## Status
