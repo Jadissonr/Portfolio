@@ -3,3 +3,7 @@
 Esta subpasta reúne anotações e registros de estudo relacionados a laboratórios e metodologias do TryHackMe.
 
 ## Conteúdo
+
+- [Investigating Windows](./investigating-windows/)
+- [Disgruntled](./disgruntled/)
+- [Ninja Skills](./ninja-skills/)
