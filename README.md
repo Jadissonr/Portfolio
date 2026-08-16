@@ -1,90 +1,82 @@
 # Portfólio Profissional — Jadisson
 
-Bem-vindo ao meu repositório de portfólio profissional. Aqui documento minha trajetória em **Segurança da Informação** e **Cloud Computing**, com foco em defesa de infraestruturas, análise de segurança e soluções em nuvem. Este repositório reflete meu compromisso com aprendizado contínuo e excelência técnica.
+Sou estudante de Segurança da Informação com foco em segurança defensiva, Linux, redes e AWS. Este repositório reúne projetos, estudos, write-ups, laboratórios e materiais de certificação que demonstram minha trajetória técnica e meu comprometimento com aprendizagem prática.
 
-## Sobre mim
+## Perfil profissional
 
-**Especialista em Segurança da Informação | Analyst Defensivo | Cloud Practitioner**
+**Segurança da Informação | Blue Team | Cloud Security | Infraestrutura e Linux**
 
-- 🎓 Graduação em andamento: **Segurança da Informação** — Universidade São Judas Tadeu (USJT)
+- 🎓 Graduação em andamento: Segurança da Informação — USJT
 - 🎓 Técnico em Redes de Computadores — SENAI São Caetano do Sul
-- 🔍 Foco: Segurança defensiva (Blue Team), análise de vulnerabilidades, hardening de sistemas Linux e AWS
-- ☁️ Expertise em: Linux administration, cloud security, redes, infraestruturas defensivas
+- 🔍 Foco principal: hardening, monitoramento, análise de ameaças, redes e proteção de infraestruturas
+- ☁️ Áreas de interesse: AWS, arquitetura segura, automação e administração de sistemas
 
-## Conteúdo do Portfólio
+## Visão geral do portfólio
 
-Este repositório contém:
+Este repositório está organizado para mostrar, de forma clara e objetiva, as principais áreas da minha formação:
 
-- **Projetos Práticos** — Implementações técnicas e documentações de estudos de caso
-- **CTF Writeups** — Análise e resolução de desafios de captura de bandeira (TryHackMe, etc.)
-- **Documentação Técnica** — Notas sobre Linux, redes, seguridade, AWS e arquiteturas defensivas
-- **Certificações e Metas** — Trilha de certificações e competências profissionais
-- **Laboratórios** — Experimentos de hardening, configuração de segurança e testes de penetração
+- **Projetos** — estudos práticos e documentações técnicas
+- **CTF Write-ups** — investigação de incidentes, análise forense e resolução de desafios
+- **Linux & Redes** — comandos, troubleshooting, arquitetura e hardening
+- **Cloud / AWS** — projetos e estudos de infraestrutura na nuvem
+- **Certificações** — trilha de aprendizado e evolução profissional
+- **Homelab** — ambiente pessoal para treinamento técnico
 
-## Estrutura do repositório
+## Navegação rápida
 
-- [projetos](projetos/)
-- [projetos-aws](projetos-aws/README.md)
-- [linux-notes](linux-notes/README.md)
-- [ctf-writeups](ctf-writeups/README.md)
-- [certificacoes](certificacoes/README.md)
-- [homelab](homelab/README.md)
+- [Projetos](projetos/)
+- [Projetos AWS](projetos-aws/README.md)
+- [Linux Notes](linux-notes/README.md)
+- [CTF Write-ups](ctf-writeups/README.md)
+- [Certificações](certificacoes/README.md)
+- [Homelab](homelab/README.md)
 
-## Destaques Técnicos
-
-- **[CTF Writeups](ctf-writeups/README.md)** — Resolução e análise técnica de desafios de segurança ofensiva e defensiva
-- **[Documentação Linux](linux-notes/README.md)** — Administração de sistemas, hardening, troubleshooting de redes e segurança
-- **[Projetos AWS](projetos-aws/README.md)** — Arquiteturas seguras, compliance, identidade e segurança em nuvem
-- **[Certificações e Desenvolvimento](certificacoes/README.md)** — Trilha técnica e certificações profissionais
-
-## Projetos Realizados
+## Projetos em destaque
 
 | # | Projeto | Descrição | Status |
 |---|---|---|---|
-| 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | Migração de infraestrutura com WordPress/MySQL; implementação de monitoramento com CloudWatch e otimização com Trusted Advisor | ✅ Concluído |
-| 02 | [Fundamentos de Redes e Firewall](projetos/fundamentos-de-redes-e-firewall.md) | Design e implementação de arquitetura de rede segura com firewalls, roteadores e switches | ✅ Concluído |
-| 03 | [Linux Administration — Terminal & Processos](projetos/linux-fundamentals-terminal-e-processos.md) | Gerenciamento avançado de processos, scripts bash e automação de tarefas | ✅ Concluído |
-| 04 | [Linux — Boot, Hardware & Kernel](projetos/linux-boot-hardware-e-kernel.md) | Análise de boot, configuração de hardware, tunning de kernel | ✅ Concluído |
-| 05 | [Linux — Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | Diagnóstico de problemas de rede, DNS, NAT e port forwarding | ✅ Concluído |
-| 06 | [TryHackMe Progress Tracker](projetos/thm-progress-tracker/README.md) | Automação em Python com integração GitHub Actions e API TryHackMe | 🔄 Em andamento |
+| 01 | [Migração On-Premise para AWS (TCC)](projetos/migracao-on-premise-para-aws-tcc.md) | Projeto de migração de infraestrutura com WordPress/MySQL, monitoramento e otimização de custos | ✅ Concluído |
+| 02 | [Fundamentos de Redes e Firewall](projetos/fundamentos-de-redes-e-firewall.md) | Arquitetura de rede segura com foco em firewalls, switches e roteadores | ✅ Concluído |
+| 03 | [Linux Administration — Terminal & Processos](projetos/linux-fundamentals-terminal-e-processos.md) | Estudo prático de administração, processos, scripts e automação no Linux | ✅ Concluído |
+| 04 | [Linux — Boot, Hardware & Kernel](projetos/linux-boot-hardware-e-kernel.md) | Exploração de boot, hardware e estrutura do kernel em ambientes Linux | ✅ Concluído |
+| 05 | [Linux — Redes e Troubleshooting](projetos/linux-redes-e-troubleshooting.md) | Diagnóstico de infraestrutura, DNS, NAT e conectividade | ✅ Concluído |
+| 06 | [TryHackMe Progress Tracker](projetos/thm-progress-tracker/README.md) | Automação de acompanhamento de salas e progresso no TryHackMe | 🔄 Em andamento |
 
----
+## Competências técnicas
 
-## Competências Técnicas
-
-**Segurança da Informação**
-- Análise de vulnerabilidades e testes de penetração
-- Hardening de sistemas Linux
+### Segurança da Informação
+- Análise de vulnerabilidades e hardening
 - Segurança de redes e firewalls
-- SIEM e monitoramento de segurança
+- Resposta a incidentes e investigação forense
+- Monitoramento e proteção de infraestrutura
 
-**Linux & Administração**
-- Administração de sistemas Linux/Unix
-- Scripting Bash e automação
-- Gerenciamento de processos e recursos
-- Troubleshooting de redes e conectividade
+### Linux e Administração
+- Administração de sistemas Linux
+- Scripts Bash e automação
+- Monitoramento de processos e recursos
+- Troubleshooting e resolução de problemas operacionais
 
-**Cloud Computing**
-- AWS fundamentals e serviços de segurança
-- Arquiteturas defensivas em nuvem
-- IAM e compliance
+### Cloud e Infraestrutura
+- Fundamentos de AWS
+- Segurança em ambientes cloud
+- Arquitetura de soluções e boas práticas de infraestrutura
+- IAM, observabilidade e serviços de nuvem
 
-**Ferramentas & Plataformas**
-- TryHackMe, CTF challenges
-- Kali Linux, Nmap, Wireshark
+### Ferramentas e plataformas
+- TryHackMe e CTFs
+- Wireshark, Nmap, Bash, Python
 - Git e GitHub
-- Bash, Python
+- Linux, redes, virtualização e ambientes de laboratório
 
----
+## Objetivo profissional
 
-## Objetivo Profissional
-
-Atuar como **Especialista em Segurança Defensiva (Blue Team)**, contribuindo para a proteção de infraestruturas críticas através de análise de segurança, detecção de ameaças e implementação de controles efetivos.
-
----
+Busco atuar em áreas de segurança defensiva, análise de ameaças e infraestrutura segura, contribuindo com proteção de ambientes críticos, automação de controles e melhoria contínua de processos técnicos.
 
 ## Contato
 
 **📧 Email:** [contato.swfps@gmail.com](mailto:contato.swfps@gmail.com)  
-**💼 Disponível para:** Discussões sobre segurança, projetos colaborativos e oportunidades profissionais.
+**💼 Disponibilidade:** projetos técnicos, colaborações, oportunidades profissionais e discussões de segurança.
 
+---
+
+> Este portfólio foi organizado para facilitar a leitura por recrutadores, colegas e parceiros técnicos, destacando tanto a parte prática quanto a trajetória de estudo e evolução profissional.
