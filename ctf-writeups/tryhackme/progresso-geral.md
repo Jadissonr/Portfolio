@@ -6,3 +6,4 @@
 | 15/08/2026 | Wireshark: The Basics | Análise de Tráfego | Introdução à análise de pacotes, dissecação por camadas OSI e filtros no Wireshark |
 | 15/08/2026 | Ninja Skills | Linux/Forense | Investigação de arquivos Linux via terminal — [ver write-up completo](./ninja-skills/) |
 | 15/08/2026 | Disgruntled | Forense Linux | Investigação forense em sistema Linux comprometido — [ver write-up completo](./disgruntled/) |
+| 16/08/2026 | Investigating Windows | Forense/Blue Team | Investigação de máquina Windows comprometida — [ver write-up completo](./investigating-windows/) |
