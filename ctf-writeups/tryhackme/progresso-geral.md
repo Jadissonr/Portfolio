@@ -7,3 +7,4 @@
 | 15/08/2026 | Ninja Skills | Linux/Forense | Investigação de arquivos Linux via terminal — [ver write-up completo](./ninja-skills/) |
 | 15/08/2026 | Disgruntled | Forense Linux | Investigação forense em sistema Linux comprometido — [ver write-up completo](./disgruntled/) |
 | 16/08/2026 | Investigating Windows | Forense/Blue Team | Investigação de máquina Windows comprometida — [ver write-up completo](./investigating-windows/) |
+| 20/08/2026 | Blue | Boot2root / Exploração de vulnerabilidade conhecida (CVE) | Exploração do MS17-010 (EternalBlue) via Metasploit, shell reverso com acesso SYSTEM direto. [ver write-up completo](./blue/) |
