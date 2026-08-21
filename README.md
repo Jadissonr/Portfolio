@@ -1,6 +1,6 @@
 # Portfólio Profissional — Jadisson
 
-Sou estudante de Segurança da Informação com foco em segurança defensiva, Linux, redes e AWS. Este repositório reúne projetos, estudos, write-ups, laboratórios e materiais de certificação que demonstram minha trajetória técnica e meu comprometimento com aprendizagem prática.
+Profissional com sólida base em redes de computadores e infraestrurura, focado em cibersegurança, Linux, windows e AWS. Este repositório reúne projetos, estudos, write-ups, laboratórios e materiais de certificação que demonstram minha trajetória técnica e meu comprometimento com aprendizagem prática.
 
 ## Perfil profissional
 
